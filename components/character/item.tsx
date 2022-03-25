@@ -6,7 +6,7 @@ const CharacterItem: FC<CharacterProps> = (props) => {
 
   return (
     <div className="card">
-      <img src={img} className="card__image" />
+      <img loading="lazy" draggable="false" src={img} className="card__image" />
       <div className="card__content">
         <div className="flex items-center">
           <h3 className="flex-1">Real Name: {nickname}</h3>
